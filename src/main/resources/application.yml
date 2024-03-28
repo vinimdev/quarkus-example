@@ -1,0 +1,15 @@
+quarkus:
+  swagger-ui:
+    always-include: true
+    path: /swagger-ui
+    enable: true
+  native:
+    native-image: 3g
+  log:
+    level: DEBUG
+  rest-client:
+    logging:
+      scope: request-response
+      body-limit: 1024
+    spring-multipart:
+      url: http://localhost:9090
